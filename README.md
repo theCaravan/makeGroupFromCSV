@@ -1,4 +1,8 @@
 # makeGroupFromCSV
 Take a CSV file with group leaders already set, and sort individuals into groups
 
-Included is the script: grouping.py, and a model to show how it works indiviuals-list.csv with the grouping.py. This CSV can be modified to suit your needs.
+Included is the script: grouping.py
+
+*Known Issues*
+
+It might show a name being added to 2 groups sometimes. I recommend checking the output for any duplicates after running.
