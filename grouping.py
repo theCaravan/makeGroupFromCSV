@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import csv
 import random
 
@@ -46,16 +47,16 @@ while NON_LEADERS != [] and IS_GROUP_FULL_COUNTER < len(END_GROUPS.keys()):
 
 ## Print the output, showing who is part of what group
 for leader in END_GROUPS.keys():
-    # print("Group Leader: {}".format(leader))
-    print("{}".format(leader))
+    print("Group Leader: {}".format(leader))
+    # print("{}".format(leader))
     for member in END_GROUPS[leader]:
-        # print("\t{}".format(member))
-        print("{}".format(member))
+        print("\t{}".format(member))
+        # print("{}".format(member))
     print("")
 
 ## If there are people not part of a group, print those
 if NON_LEADERS != []:
-    # print("Those not in a group:")
+    print("Those not in a group:")
     for index, member in enumerate(NON_LEADERS):
-        # print("{:>3}- {}".format(index + 1, member[0]))
-        print("{}".format(member[0]))
+        print("{:>3}- {}".format(index + 1, member[0]))
+        # print("{}".format(member[0]))
